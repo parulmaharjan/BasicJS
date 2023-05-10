@@ -180,3 +180,10 @@
 //         console.log("no weather updates");
 //         break;
 // }
+//DOM(Document object model)
+const title=document.getElementById("mytitle");
+title.innerHTML="Dom manipulation";
+title.style.backgroundColor="red";
+title.style.color="white";
+title.style.cursor="pointer"
+console.log(title);
