@@ -271,3 +271,38 @@
 
 //array methods (basic array method);
   
+ const arr=[1,2,3,4,5,6,7,8,9];
+// //length
+// //console.log(arr.length);
+// //push-add
+// arr.push(23);
+// console.log(arr);
+
+//pop-removes last element
+// arr.pop();
+// console.log(arr);
+//shift-removes 1st element
+// arr.shift();
+// console.log(arr);
+//unshift
+// arr.unshift(60);
+// console.log(arr);
+
+//includes
+// const newArr=arr.includes(80);
+
+// console.log(newArr);
+
+
+//reverse
+//arr.reverse();
+//
+
+//console.log(arr);
+
+//splice-remove1-3
+//arr.splice(1,3);
+//console.log(arr);
+//slice
+// const newArr=arr.slice(1,4);
+// console.log(newArr);
