@@ -239,7 +239,7 @@
 // // for (let index = 1; index <= 10; index++) {
 // //   sum+=index; //sum=sum+index
 // //   //const element = array[index];
-  
+
 // // }
 // // console.log(sum);
 // //while loop
@@ -247,7 +247,7 @@
 // // let sum=0;
 // // while (i<=10) {
 // //   sum+=i;
-  
+
 // //   i++;}
 // //   console.log(sum);
 
@@ -270,8 +270,8 @@
 // console.log(array);
 
 //array methods (basic array method);
-  
- //const arr=[1,2,3,4,5,6,7,8,9];
+
+//const arr=[1,2,3,4,5,6,7,8,9];
 // //length
 // //console.log(arr.length);
 // //push-add
@@ -320,13 +320,13 @@
 // console.log(array);
 
 //object
-const profile={
-  firstName:"Ram Bahadur",
-  lastName:"Badal",
-  age:55,
-  job:"minister",
-  isSalary:10000000,
-  isSingle:function(){   //a property can be fun then its called method
+const profile = {
+  firstName: "Ram Bahadur",
+  lastName: "Badal",
+  age: 55,
+  job: "minister",
+  isSalary: 10000000,
+  isSingle: function () {   //a property can be fun then its called method
     console.log("corrupt");
     return true;
   },
