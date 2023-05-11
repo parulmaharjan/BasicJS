@@ -271,7 +271,7 @@
 
 //array methods (basic array method);
   
- const arr=[1,2,3,4,5,6,7,8,9];
+ //const arr=[1,2,3,4,5,6,7,8,9];
 // //length
 // //console.log(arr.length);
 // //push-add
@@ -306,3 +306,29 @@
 //slice
 // const newArr=arr.slice(1,4);
 // console.log(newArr);
+
+
+//filter
+// const newarr=arr.filter((n) => n>3)
+// console.log(newarr);
+
+// let array=[];
+// for(let i=0;i<100;i++){
+//   array[i]=i;
+//   //array.push(i)
+// }
+// console.log(array);
+
+//object
+const profile={
+  firstName:"Ram Bahadur",
+  lastName:"Badal",
+  age:55,
+  job:"minister",
+  isSalary:10000000,
+  isSingle:function(){   //a property can be fun then its called method
+    console.log("corrupt");
+    return true;
+  },
+};
+console.log(profile);
