@@ -320,15 +320,150 @@
 // console.log(array);
 
 //object
-const profile = {
-  firstName: "Ram Bahadur",
-  lastName: "Badal",
-  age: 55,
-  job: "minister",
-  isSalary: 10000000,
-  isSingle: function () {   //a property can be fun then its called method
-    console.log("corrupt");
-    return true;
-  },
-};
-console.log(profile);
+// const profile = {
+//   firstName: "Ram Bahadur",
+//   lastName: "Badal",
+//   age: 55,
+//   job: "minister",
+//   isSalary: 10000000,
+//   isSingle: function () {   //a property can be fun then its called method
+//     console.log("corrupt");
+//     return true;
+//   },
+// };
+// console.log(profile);
+
+
+
+
+//function=blocks of code that perform certain tasks
+//always use DRY concept dont repeat yourself
+//traditionafun ma mathi cLL garda hunxa ..
+//advance ma testo mildaina
+
+
+//scoping two types:
+//scoping means determining where vraiables fun and obj are acessible in your code
+//globalscope & local scope
+//var declared outside of amy functop, are in the global scope amd 
+//local scope=declared inside fun
+//let and const variabbles dec;ared with the let or const leyword are block scoped that 
+//means they can only be accessed within thw block in whuch the weredeclared.
+//var dunction scope=global scope
+//let and const=local scope
+
+
+//DOM(Document object model)**IMP
+//-programming interface for HTML and xml docs,
+//used to manupulate the contents of a webpage dynamically using JS
+
+//-allows dev. to progarmmatically acess and manipulate the contents of a doc. as well as to
+//respond to events such as use input.
+
+//represenrs the structure of a docs. as a tree-like hierarchy of obj witheacg obg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function myFunction(params) {
+//   let x=9;
+//   let y=8;
+//   let ans=x+y;
+//   console.log(ans);
+  
+// }
+// myFunction();
+
+
+//FUNCTION
+
+
+// function name() {
+// console.log("RAM BAHADUR");
+  
+// }
+// name();
+
+// function add() {
+//   let x=9;
+//   let y=8;
+//   let Ans=x+y;
+//   console.log(Ans);
+  
+// }
+// add();
+
+//parameters & argument in function
+//vok lagyooooo :(
+
+// function sum(a,b,c) {
+//   let result=a+b+c/2;
+//   console.log(result);
+  
+// }
+// sum(9,6);
+
+// function sum(a,b) 
+// {
+//   let ans=a+b;
+//   return ans;
+// }
+// const result=sum(50,60);
+// console.log(result);
+
+
+
+// //Example:
+// function greeting(name,address) {
+//   console.log(`My name is ${name}.I live at ${address}`);
+// }
+// greeting("Parul","Dhapakhel");
+// greeting("Alinuska","MahaendraNagar")
+
+
+// function add(arr=[]) {//empty array
+//   let sum=0;
+//   for(i=0;i<arr.length;i++){
+//     sum+=arr[i];
+//   }
+//   return sum;
+
+// }
+// const ans=add([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]);
+// console.log(ans);
+
+
+//scoping example: var accesibility
+// var x=9;
+// console.log(x);
+//  function scope() {
+//   let y=9+x;
+//   console.log(x);
+//   console.log(y);
+  
+//  }
+//  scope();
+//  //console.log(y);
+
+// function mynum() {
+//   let x=10;
+//   if(x>5){ 
+//     console.log("x is greater");
+
+//   }
+//   console.log("x is greater");
+  
+
+// }
+// console.log(x);
+// mynum();
