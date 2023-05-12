@@ -467,3 +467,10 @@
 // }
 // console.log(x);
 // mynum();
+//const name=(params)=>
+//advance arrow function
+const result=(a,b)=>{
+  return a*b;
+}
+const ans=result(2,3);
+console.log(ans);
