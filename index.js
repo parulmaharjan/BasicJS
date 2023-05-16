@@ -489,7 +489,7 @@
 // const myInput=document.getElementsByName("email");
 // const mySpan=document.getElementsByTagName("span");
  const myButton=document.querySelector(".clickk");
- 
+ const delButton=document.querySelectorAll("button");
 //const newData=myAttribute.getAttribute("class");
 // //sconst newset=myAttribute.setAttribute("class","say");
  myButton.style.backgroundColor="Red";
@@ -513,6 +513,7 @@
 // // mySpan[0].innerHTML="I love Nepal."
 // // const meroDes=document.querySelector("#Nepal");
 // // console.log(meroDes);
+//console.log(delButton);
 
 // //the brown fox jumps over the lazy dog.
 // //the brown fox jumps over the lazy dog.
@@ -529,5 +530,16 @@ function myAdd(){
 newh1.innerHTML="Save Country";
 document.body.prepend(newh1);
 } 
-myButtons.onclick = myAdd;
+myButton.onclick = myAdd;
 //myAdd();
+
+function delBtn() {
+    const trasgh=document.querySelector("h1");
+    trasgh.remove() 
+}
+myButton.onclick=myAdd;
+delButton[1].onclick=delBtn;
+delButton[1].style.backgroundColor="blue";
+delButton[1].style.color="white";
+delButton[1].style.padding="5px";
+
