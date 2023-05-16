@@ -488,13 +488,13 @@
 // const myIs=document.getElementsByClassName("is");
 // const myInput=document.getElementsByName("email");
 // const mySpan=document.getElementsByTagName("span");
- const myButton=document.querySelector(".clickk");
- const delButton=document.querySelectorAll("button");
-//const newData=myAttribute.getAttribute("class");
-// //sconst newset=myAttribute.setAttribute("class","say");
- myButton.style.backgroundColor="Red";
- myButton.style.color="White";
-// myButton.style.cursor="pointer";
+//  const myButton=document.querySelector(".clickk");
+//  const delButton=document.querySelectorAll("button");
+// //const newData=myAttribute.getAttribute("class");
+// // //sconst newset=myAttribute.setAttribute("class","say");
+//  myButton.style.backgroundColor="Red";
+//  myButton.style.color="White";
+// // myButton.style.cursor="pointer";
 
 // // console.log(newData);
 // // console.log(myHow);
@@ -523,23 +523,90 @@
 
 
 
-//create element from js
-//using function
-function myAdd(){
-  const newh1= document.createElement("h1");
-newh1.innerHTML="Save Country";
-document.body.prepend(newh1);
-} 
-myButton.onclick = myAdd;
-//myAdd();
+// //create element from js
+// //using function
+// function myAdd(){
+//   const newh1= document.createElement("h1");
+// newh1.innerHTML="Save Country";
+// document.body.prepend(newh1);
+// } 
+// myButton.onclick = myAdd;
+// //myAdd();
 
-function delBtn() {
-    const trasgh=document.querySelector("h1");
-    trasgh.remove() 
-}
-myButton.onclick=myAdd;
-delButton[1].onclick=delBtn;
-delButton[1].style.backgroundColor="blue";
-delButton[1].style.color="white";
-delButton[1].style.padding="5px";
+// function delBtn() {
+//     const trasgh=document.querySelector("h1");
+//     trasgh.remove() 
+// }
+// myButton.onclick=myAdd;
+// delButton[1].onclick=delBtn;
+// delButton[1].style.backgroundColor="blue";
+// delButton[1].style.color="white";
+// delButton[1].style.padding="5px";
 
+//ADVANCE ARRAY METHOD==set of built in fun that are available on arrays
+//normally used inside fun(arrow)
+//for powerful operations on array
+
+
+// const arr = [6,3,7,9,8,2,5,4];
+ //find method=returs 1st single elements 
+//console.log(arr.find((value,index)=>{
+  //if (value>4) return value;
+
+//}))
+
+//filter method=return elements in form of array
+
+// console.log(arr.filter((value,index)=>{
+//   if(value>4) return value;
+// }));
+
+//every method=only returns
+// console.log(arr.every((value,index)=>{
+//   if (value>4) return value;
+// }));
+
+
+//some method
+// console.log(arr.some((value,index)=>{
+//   if (value>4 ) return value;
+// }));
+
+//for each=it iterates main array only not return any new array
+
+// console.log(arr.forEach((value,index)=>{
+//   return(value+=20);
+// }));
+// let total=0;
+// const result =arr.forEach((value,index)=>{
+//  return value+=20;
+// });
+// console.log(result);
+// console.log(arr);
+// //map=new array returns after iterrating main array
+//list ko form ma arr lai print garna
+// let total=0;
+// const result =arr.map((value,index)=>{
+//  return value+=20;
+// });
+// console.log(result);
+// console.log(arr);
+
+
+//reduce
+//especially in calculation
+
+
+// const newArr =  arr.reduce((preValue,value,index)=>{
+//     return preValue+=value;
+
+//   });
+//   console.log(newArr);
+//   console.log(arr);
+
+// //events listeners
+// const Btn= document.querySelector(".hey");
+// Btn.addEventListener("click",()=>{
+//   alert("hello");
+
+// })
