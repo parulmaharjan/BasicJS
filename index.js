@@ -610,3 +610,84 @@
 //   alert("hello");
 
 // })
+
+//addEventListener
+
+//event listners are typically added to an element using the addEventListner() method,
+//which takes two arg. the type of event to listen and the  function to call
+//when the event occurs
+
+//windown-obj=doc and  docs -obj=body 
+
+//Addevent listeners
+const myTitlle = document.getElementsByClassName("title");
+const Box = document.getElementsByTagName("span");
+const button = document.getElementById("heyclick");
+const query = document.querySelector("input");
+
+
+
+
+// console.log(myTitlle[0]);
+// console.log(Box[0]);
+// console.log(button);
+console.log(query);
+
+
+button.addEventListener("click",()=>{
+  myTitlle[0].innerHTML="Haina k ho yesto yo chakka parxu ma";
+  myTitlle[0].classList.add("myBox"); //internal css apply gareko yaha chai
+  // myTitlle[0].style.backgroundColor ="red";
+  // myTitlle[0].style.color="white";
+
+});
+Box[0].addEventListener("mouseover",()=>{
+  button.style.transform="scale(1.1)";
+})
+
+Box[0].addEventListener("mouseout",()=>{
+  button.style.transform="";
+})
+Box[0].addEventListener("mouseover",()=>{
+  myTitlle[0].style.backgroundColor="pink";
+})
+Box[0].addEventListener("mouseout",()=>{
+  myTitlle[0].style.backgroundColor="";
+})
+Box[0].style.padding="20px";
+Box[0].style.color="black";
+Box[0].style.backgroundColor="yellow";
+Box[0].style.margin="50px"
+
+
+
+
+
+button.style.padding="50px";
+button.style.margin="50px";
+
+button.style.backgroundColor="blue";
+button.style.color="white";
+//prevent defult=right click garda 
+// button.addEventListener("contextmenu",(e)=>{
+//   e.preventDefault();
+//button.style.backgroundColor="crimson";
+//})
+// addEventListener("contextmenu",(e)=>{
+//   e.preventDefault();
+//   button.style.filter="blur(10px)";
+
+// })
+Box[0].addEventListener("dblclick",()=>{
+  document.body.style.backgroundColor="black"
+})
+Box[0].addEventListener("click",()=>{
+  document.body.style.backgroundColor="white"
+})
+
+
+//input ko kura lai acess gareko console ma
+query.addEventListener("change",(e)=>{
+  console.log(e.target.value);
+
+})
