@@ -694,4 +694,115 @@
 
 //math object in javascript
 //-built in object 
-console.log(Math.round(4.6));
+//console.log(Math.round(4.6));
+//const ans= ma
+// console.log(Math.round(3.2));//no.round off garxa
+// console.log(Math.floor(4.7));//point agi k xa tey hunxa
+// console.log(Math.ceil(7.2));//
+// console.log(Math.trunc(8.5988667));
+// console.log(Math.pow(2,3));
+// console.log(Math.sqrt(25));
+// console.log(Math.abs(-25));
+// function myFunc(a,b){
+//     return Math.abs(a-b);
+// }
+// console.log(myFunc(2,9));
+// console.log(Math.random()*7);
+// console.log(Math.max(67,7,78,90));
+// console.log(Math.min(67,7,78,90));
+// console.log(Math.sin((90 * Math.PI)/180));//radian ma change gareko
+// console.log(Math.sin((30 * Math.PI)/180));
+
+
+//date obj
+//const date=new Date();
+// console.log(date);
+// console.log(date.getTime);
+// console.log(date.toISOString);
+// console.log(date.getFullYear);
+// console.log(date.getMinutes);
+// console.log(date.getHours);
+// console.log(date.getDay);
+
+// const Text= document.getElementById("myText");
+// const Add= document.getElementById("myAdd");
+// const Delete = document.getElementById("myDelete");
+
+
+// Add.style.backgroundColor ="green";
+// Add.style.color ="white";
+// Add.style.padding ="20 px";
+// Add.style.cursor ="pointer";
+// Add.style.border="none";
+
+
+// Delete.style.backgroundColor ="red";
+// Delete.style.color ="white";
+// Delete.style.padding ="20 px";
+// Delete.style.cursor ="pointer";
+// Delete.style.border="none";
+
+// const myAdd =()=>{
+// alert(Text.value);
+    //localStorage.setItem("key",Text.value);
+//     localStorage.setItem("key",JSON.stringify({name: "Ram", age: 25, gender: "male"}));
+// };
+    
+    
+// Add.addEventListener("click",myAdd);
+// Delete.addEventListener("click",()=>{
+//    // localStorage.removeItem("key");
+//    localStorage.clear();
+    
+// })
+// if(localStorage.getItem("key")){
+//     console.log(JSON.parse(localStorage.getItem("key")));
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//local storage
+//its a data storage type of web storage
+//limited to 5mb and can contaion only string
+//data consistency
+//has two methods
+//set-to store item and get item-to acess
+//localstorage.setitem("key",value/input)
+
+//session storage
+//= opp. of local storage//kniw as the web storage api
+//not for data cionsistency
+//diff tabs have diff session strafe
+//data exist till the current tab is open if we close the current tab then our
+//data will erase automaticallly from the session storagae
+
+
