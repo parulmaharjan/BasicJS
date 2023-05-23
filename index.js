@@ -758,14 +758,40 @@
 // if(localStorage.getItem("key")){
 //     console.log(JSON.parse(localStorage.getItem("key")));
 // };
+//setTimeout & set Time ineterval
+//>-built in fun 
+//time in miliSeconds
 
+//setTimeout(function,delay)
+//setTime interval
+//set timeout()
 
+// setTimeout(()=>{
+//     console.log("hello world");
 
+// },5000);
 
+//setInterval
 
+// setInterval(()=>{
+//     console.log("hello");
 
+// },2000);
+// const btn = document.querySelector("button");
+// const greeting=(name,age,income)=>{
+//     console.log(`My name is ${name}. my age is ${age} and my  salary is ${income}`);
 
+// };
 
+// const closeTime= setInterval(greeting,2000,"ram",23,5000000);
+// btn.addEventListener("click",()=>{
+//     clearInterval(closeTime);
+// });
+
+// const closeTime= setTimeout(greeting,2000,"ram",23,5000000);
+// btn.addEventListener("click",()=>{
+//     clearTimeout(closeTime);
+// });
 
 
 
