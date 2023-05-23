@@ -3,7 +3,8 @@ const description = document.getElementById("description");
 const form = document.querySelector("form");
 const container = document.querySelector(".container");
 
-let tasks = [];
+let tasks = localStorage.getItem("tasks")?JSON.parse(localStorage.getItem("tasks")):[];
+ShowAllTasks();
 
 function ShowAllTasks() {
   tasks.forEach((value, index) => {
@@ -24,9 +25,12 @@ function ShowAllTasks() {
     const btn = document.createElement("button");
     btn.setAttribute = ("class", "btnDelete");
     btn.innerText = "X";
+
     btn.addEventListener("click", () => {
-      removeTasks();
-      tasks.splice(index, 1);
+      removeTasks();  
+    
+    tasks.splice(index, 1);
+    localStorage.setItem("tasks",JSON.stringify(tasks));
       ShowAllTasks();
     });
 
@@ -34,28 +38,34 @@ function ShowAllTasks() {
     container.append(div);
   });
 }
-function removeTasks() {
-  const div = document.querySelector(".task");
+
+function removeTasks(){
+  tasks.forEach(()=>{
+  const div=  document.querySelector(".task");
   div.remove();
+  })
 }
-function clearForm() {
-  title.value = "";
-  description.value = "";
-}
+// function clearForm() {
+//   title.value = "";
+//   description.value = "";
+// }
+
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  //removeTasks();
-  if (title.value != "") {
+  removeTasks();
+  
     tasks.push({
       title: title.value,
       description: description.value,
     });
-    ShowAllTasks();
-    clearForm();
-  }
-});
+    localStorage.setItem("tasks",JSON.stringify(tasks));
 
+    ShowAllTasks();
+   // clearForm();
+  }
+);
+
+//trim
 //no validation
-//add bug
-//del bug
+
