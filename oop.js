@@ -79,10 +79,7 @@
 // //         console.log(accounts);
 // //     }
 
-// // })    
-
-
-
+// // })
 
 // js function ma proprty ma js ley yeuta property add gardina ieoprototype
 // //protoytypr is empty obj
@@ -92,7 +89,6 @@
 // }
 // add(2,3);
 // console.log(add);
-
 
 // class in //js
 //constructor method is used to initializw an obj of the class
@@ -136,9 +132,8 @@
 // console.log(sitaac);
 
 //we use inheritance insted to repeating codes
-//use parents pro[erty and methods from parents obj  
+//use parents pro[erty and methods from parents obj
 //
-
 
 // function pet(name,breed){
 //     Animal.call(this.name);
@@ -156,19 +151,85 @@
 
 // console.log(spot.breed);
 
-function BankAc(customerName,balance){
+// function BankAc(customerName,balance){
+//     this.customerName = customerName;
+//     this.accountNumber = Date.now();
+//     this.balance = balance;
+// }
+
+// BankAc.prototype.deposit = function(amount){
+//     this.balance += amount;
+// };
+
+// BankAc.prototype.withdraw = function(amount){
+//     this.balance -= amount;
+// };
+
+// const sitaAc = new BankAc("sita",7000);
+// console.log(sitaAc);
+
+class BankAc {
+   #balance;
+  constructor(customerName, balance = 0) {
     this.customerName = customerName;
     this.accountNumber = Date.now();
-    this.balance = balance;
+    this.#balance = balance;
+  }
+  deposit(amount) {
+    this.#balance += amount;
+  }
+  withdraw(amount) {
+    this.#balance -= amount;
+  }
+  
+setBalance(amount){
+    this.#balance = amount;
+} 
+
+getBalance (amount){
+    return this.#balance ;
 }
+}
+class savingAc extends BankAc {
+  transactionLimit = 50000;
+  constructor(customerName, balance) {
+    super(customerName, balance); //super represnts parent constructor
+  }
+  #calculateIntrest(amount){
+    console.log("calculating intrest  :"+amount);
+  }
+  takePersonalLoan(amount) {
+    this.#calculateIntrest(amount);
+    console.log("taking personal loan" + amount);
+  }
+}
+class currentAc extends BankAc {
+  transactionLimit = 10000;
+  constructor(customerName, balance) {
+    super(customerName, balance);
+  }
+  takePersonalLoan(amount) {
+    console.log("taking personal loan" + amount);
+  }
+}
+const ramac = new savingAc("ram", 6000);
+ramac.takePersonalLoan(20000);
+//const sitaAc = new savingAc("sita", 6000);
+//ramac.setBalance(500);
+//const hey =ramac.getBalance();
+//ramac.balance= 8000;
+// sitaAc.deposit(2000);
+// sitaAc.withdraw(1000);
+// ramac.deposit(4000);
+// ramac.deposit = "SITA";
+// ramac.withdraw(1000);
+//console.log(hey);
+ console.log(ramac);
+// console.log(sitaAc);
 
-BankAc.prototype.deposit = function(amount){
-    this.balance += amount;
-};
-
-BankAc.prototype.withdraw = function(amount){
-    this.balance -= amount;
-};
-
-const sitaAc = new BankAc("sita",7000);
-console.log(sitaAc);
+//encapsulation-- class ko property lai class bahira bata acees garna nadini.....
+//use # keyword
+//#method
+//class .....{
+//    #...
+//}
