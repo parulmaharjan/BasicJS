@@ -168,52 +168,52 @@
 // const sitaAc = new BankAc("sita",7000);
 // console.log(sitaAc);
 
-class BankAc {
-   #balance;
-  constructor(customerName, balance = 0) {
-    this.customerName = customerName;
-    this.accountNumber = Date.now();
-    this.#balance = balance;
-  }
-  deposit(amount) {
-    this.#balance += amount;
-  }
-  withdraw(amount) {
-    this.#balance -= amount;
-  }
+// class BankAc {
+//    #balance;
+//   constructor(customerName, balance = 0) {
+//     this.customerName = customerName;
+//     this.accountNumber = Date.now();
+//     this.#balance = balance;
+//   }
+//   deposit(amount) {
+//     this.#balance += amount;
+//   }
+//   withdraw(amount) {
+//     this.#balance -= amount;
+//   }
   
-setBalance(amount){
-    this.#balance = amount;
-} 
+// setBalance(amount){
+//     this.#balance = amount;
+// } 
 
-getBalance (amount){
-    return this.#balance ;
-}
-}
-class savingAc extends BankAc {
-  transactionLimit = 50000;
-  constructor(customerName, balance) {
-    super(customerName, balance); //super represnts parent constructor
-  }
-  #calculateIntrest(amount){
-    console.log("calculating intrest  :"+amount);
-  }
-  takePersonalLoan(amount) {
-    this.#calculateIntrest(amount);
-    console.log("taking personal loan" + amount);
-  }
-}
-class currentAc extends BankAc {
-  transactionLimit = 10000;
-  constructor(customerName, balance) {
-    super(customerName, balance);
-  }
-  takePersonalLoan(amount) {
-    console.log("taking personal loan" + amount);
-  }
-}
-const ramac = new savingAc("ram", 6000);
-ramac.takePersonalLoan(20000);
+// getBalance (amount){
+//     return this.#balance ;
+// }
+// }
+// class savingAc extends BankAc {
+//   transactionLimit = 50000;
+//   constructor(customerName, balance) {
+//     super(customerName, balance); //super represnts parent constructor
+//   }
+//   #calculateIntrest(amount){
+//     console.log("calculating intrest  :"+amount);
+//   }
+//   takePersonalLoan(amount) {
+//     this.#calculateIntrest(amount);
+//     console.log("taking personal loan" + amount);
+//   }
+// }
+// class currentAc extends BankAc {
+//   transactionLimit = 10000;
+//   constructor(customerName, balance) {
+//     super(customerName, balance);
+//   }
+//   takePersonalLoan(amount) {
+//     console.log("taking personal loan" + amount);
+//   }
+// }
+// const ramac = new savingAc("ram", 6000);
+// ramac.takePersonalLoan(20000);
 //const sitaAc = new savingAc("sita", 6000);
 //ramac.setBalance(500);
 //const hey =ramac.getBalance();
@@ -224,7 +224,7 @@ ramac.takePersonalLoan(20000);
 // ramac.deposit = "SITA";
 // ramac.withdraw(1000);
 //console.log(hey);
- console.log(ramac);
+// console.log(ramac);
 // console.log(sitaAc);
 
 //encapsulation-- class ko property lai class bahira bata acees garna nadini.....
@@ -233,3 +233,85 @@ ramac.takePersonalLoan(20000);
 //class .....{
 //    #...
 //}
+
+
+//static property and method 
+//class vitra ko method ra properties lai direct access garna milxa vani i.e static
+//i.e yesma instance(obj ko ke role hudaina)
+
+// class profile{
+//     constructor(name,age,income){
+//         this.name = name;
+//         this . age = age;
+//         this . income = income;
+//     }
+//     static sortByAge(user1, user2){
+//         return user1.age - user2.age;
+
+//     }
+// }
+
+// const user1 = new profile("Ram", 23, 1233);
+// const user2 = new profile("hari", 16, 120);
+// const user3 = new profile("shyam", 7, 14);
+
+// const users=[user1, user2, user3];
+// users.sort((profile.sortByAge));
+// console.log(users);
+
+
+class circle{
+    constructor (radius){
+        this. radius = radius;
+    }
+    //property
+    static defaultValue = 3;
+
+    //instace method
+
+calculate (){
+    return Math.PI*this.radius *this.radius;
+}
+
+
+    //static method
+    static compareBY(rad1, rad2){
+        return rad1 - rad2;
+
+    }
+}
+
+const rad1 = new circle(8);
+const rad2 = new circle(5);
+console.log(rad1, rad2);
+console.log(circle.defaultValue);// propety
+console.log(circle.compareBY(9,5));//  static method call
+console.log(rad1.calculate()); // instance method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//stack in JS
+//execution context and execution stack
