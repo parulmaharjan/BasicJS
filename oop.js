@@ -260,33 +260,33 @@
 // console.log(users);
 
 
-class circle{
-    constructor (radius){
-        this. radius = radius;
-    }
-    //property
-    static defaultValue = 3;
+// class circle{
+//     constructor (radius){
+//         this. radius = radius;
+//     }
+//     //property
+//     static defaultValue = 3;
 
-    //instace method
+//     //instace method
 
-calculate (){
-    return Math.PI*this.radius *this.radius;
-}
+// calculate (){
+//     return Math.PI*this.radius *this.radius;
+// }
 
 
-    //static method
-    static compareBY(rad1, rad2){
-        return rad1 - rad2;
+//     //static method
+//     static compareBY(rad1, rad2){
+//         return rad1 - rad2;
 
-    }
-}
+//     }
+// }
 
-const rad1 = new circle(8);
-const rad2 = new circle(5);
-console.log(rad1, rad2);
-console.log(circle.defaultValue);// propety
-console.log(circle.compareBY(9,5));//  static method call
-console.log(rad1.calculate()); // instance method
+// const rad1 = new circle(8);
+// const rad2 = new circle(5);
+// console.log(rad1, rad2);
+// console.log(circle.defaultValue);// propety
+// console.log(circle.compareBY(9,5));//  static method call
+// console.log(rad1.calculate()); // instance method
 
 
 
