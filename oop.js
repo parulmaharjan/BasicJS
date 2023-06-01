@@ -288,30 +288,114 @@
 // console.log(circle.compareBY(9,5));//  static method call
 // console.log(rad1.calculate()); // instance method
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//single therad synchronous= js behaviour
 
 
 //stack in JS
-//execution context and execution stack
+//-stack is data structure that stores a collection of items in a last in 1st out order
+
+//execution context & executiom stack
+//fuction jaba call garxam teti bela 2 ta stack banxa exectution stack and global execution stack
+//in su,,art an excetutuiom context represenrs the env in whicj the js code
+//is executed amd yje excetuin stack keep tracks of the fun calls
+
+
+// let i = 8;
+// let j =7;
+// function sum(a,b){
+//     return a+b ;
+// }
+
+// const result = sum(i,j);
+// console.log(result);
+
+//diff between synchronous and asynchronous programming in js
+
+
+//asynchronous
+// console.log("hello world!");
+// console.log("hey harka dai!");
+
+// setTimeout(()=>{
+//     console.log("Ruko jara sabar karo")
+// },5000)
+
+// setTimeout(()=>{
+//     console.log("ma tiktok chalauxu")
+// },2000)
+// console.log("k xa");
+
+//IMP FROM HRER
+
+
+
+//asychronuous garney way
+//-callback
+//-promises
+//-string oe
+
+//yeuta fun lai if arko fun ma as a argument pass garna milxa vani we called it callback.
+//tyo arg pass vako fun lai vanxa
+//---code repeat hunaaa;
+//callback  hell== if call stack not used properly then we call it callsatckhell
+//callback hell ko rescue --promises in JS
+//-two type of promise--resolve- sucess, --reject - failure
+//simply promises is js obj which manages asynchronous task in JS
+//
+//situation in which if we dont used
+
+// alert("hello world");
+// console.log("task1");
+// console.log("task2");
+// console.log("task3");
+// console.log("task4");
+
+// function sum(a,b,callback){
+//     const result = a+b;
+//     callback( result);
+// }
+// function added(result){
+//     const h1 = document.querySelector("h1");
+//     h1.innerText = result; 
+// }
+// sum(4,8, added);
+
+// let arr=[1 ,2 ,13 ,4 ,5,8,3];
+// function calculations(arr = [], callback){
+//     let ans = [];
+
+//     for(i=0; i< arr.length; i++){
+//         const element = callback(arr[i])
+//         ans.push(element);
+//     }
+//     console.log(ans);
+// }
+// calculations(arr, (a)=>a+10);
+// calculations(arr, (a)=>a-10);
+// calculations(arr,(a)=> a*10);
+// calculations(arr, (a)=>a/10);
+
+
+
+//promise
+//resolve - then
+//reject - catch
+// const a = new Promise ((resolve , reject)=>{
+//     let sucess = false;
+//     if(sucess) resolve("promise fulfilled");
+//     else reject("technical error");
+// });
+// a.then((parameter)=> console.log(parameter)).catch((error) => 
+// console.log(error));
+
+console.log("hell0 world");
+setTimeout(()=>{
+    console.log("harka dai");
+}, 2000);
+
+
+function fetchData(){
+    fetch("https://catfact.ninja/fact").then((res)=> res.json()).then((data)=>console.log(data)).catch((error)=> console.log(error));
+}
+fetchData();
+console.log("haina k ho yesto yo");
