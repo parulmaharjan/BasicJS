@@ -359,7 +359,7 @@
 //     h1.innerText = result; 
 // }
 // sum(4,8, added);
-
+//
 // let arr=[1 ,2 ,13 ,4 ,5,8,3];
 // function calculations(arr = [], callback){
 //     let ans = [];
@@ -375,9 +375,7 @@
 // calculations(arr,(a)=> a*10);
 // calculations(arr, (a)=>a/10);
 
-
-
-//promise
+//promise- js obj
 //resolve - then
 //reject - catch
 // const a = new Promise ((resolve , reject)=>{
@@ -388,14 +386,66 @@
 // a.then((parameter)=> console.log(parameter)).catch((error) => 
 // console.log(error));
 
-console.log("hell0 world");
-setTimeout(()=>{
-    console.log("harka dai");
-}, 2000);
+// console.log("hell0 world");
+// setTimeout(()=>{
+//     console.log("harka dai");
+// }, 2000);
 
 
-function fetchData(){
-    fetch("https://catfact.ninja/fact").then((res)=> res.json()).then((data)=>console.log(data)).catch((error)=> console.log(error));
-}
-fetchData();
-console.log("haina k ho yesto yo");
+// function fetchData(){
+//     fetch("https://catfact.ninja/fact").then((res)=> res.json()).then((data)=>console.log(data)).catch((error)=> console.log(error));
+// }
+// fetchData();
+// console.log("haina k ho yesto yo");
+
+// let arr =[];
+// const fetchData=()=>{
+//     return new Promise ((resolve, reject)=>{
+//         setTimeout(()=>{
+
+//             arr.push({name:"RAMEY", age:23})
+//             if(arr.length>0)resolve("data fetched")
+//             else reject("some technical error")
+//         }, 2000)
+//     });
+// };
+
+// fetchData()
+// .then((message)=> console.log(message))
+// .catch((error)=> console.log(error)).finally(()=> console.log("Dubai tira MOH"));
+
+// fetch api
+//-- due to help of promise we can use fetch api
+//--used
+
+
+//json -- object of object
+
+//json formatter extension...
+//free api no key. & open in new tab
+
+//how to do fetch API
+//  const url = "https://catfact.ninja/fact";
+// const h1 = document.querySelector("h1");
+// const fetchData = ()=>{
+//     fetch(url)
+//     .then((res)=> res.json())
+//     .then((data)=>(h1.innerText = data.fact))
+//     .catch((error)=>console.log(error));
+// };
+// fetchData();
+
+//async & await in JS
+//--better than previous
+
+// const fetchData =async ()=>{
+// try {
+//     const res = await fetch(url);
+//     const data = await res.json();
+//     h1.innerHTML = data.fact;
+// } catch (error) {
+//     console.log(error)
+    
+// }
+// };
+// fetchData();
