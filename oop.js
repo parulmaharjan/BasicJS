@@ -181,7 +181,7 @@
 //   withdraw(amount) {
 //     this.#balance -= amount;
 //   }
-  
+
 // setBalance(amount){
 //     this.#balance = amount;
 // } 
@@ -445,7 +445,59 @@
 //     h1.innerHTML = data.fact;
 // } catch (error) {
 //     console.log(error)
-    
+
 // }
 // };
 // fetchData();
+
+// const url = "https://api.zippopotam.us/us/33162/";
+// const h1 = document.querySelector("h1");
+// const h2 = document.querySelector("h2");
+// const h3 = document.querySelector("h3");
+// const fetchData= async()=>{
+//     try{
+//     const res = await fetch(url);
+//     console.log(res);
+//     const data = await res.json();  
+//     //!called D structure  
+//     const {country, places}=data;
+
+
+// console.log(data);
+
+//      h1.innerHTML= country;
+//     }catch(error){
+//         console.log(error);
+//     }
+// }
+// fetchData();
+const temperatureField = document.querySelector(".weather1");
+const cityField = document.querySelector(".weather2 p");
+const dateField = document.querySelector(".weather2 span")
+const emojiField = document.querySelector(".weather3 img")
+const weatherField = document.querySelector(".weather3 span")
+const searchField = document.querySelector(".searchfield");
+const form = document.querySelector("form");
+// const url ="https://api.weatherapi.com/v1/current.json?key=61efb09343ac411391c105344230506&q=Kathmandu&${targer}"
+let target = "kathmandu"
+const fetchData = async () => {
+    const res = await fetch(
+        `https://api.weatherapi.com/v1/current.json?key=61efb09343ac411391c105344230506&q=Kathmandu&${target}`
+    );
+    const data = await res.json();
+    const {
+        current: {
+          temp_c,
+          condition: { text, icon },
+        },
+        location: { name, localtime },
+      } = data;
+    console.log(data);
+    manipulationDom(temp_c);
+      
+};
+fetchData();
+
+function manipulationDom(temp){
+    temperatureField.innerHTML = temp;
+}

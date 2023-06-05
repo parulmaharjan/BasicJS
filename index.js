@@ -659,7 +659,7 @@
 // Box[0].style.backgroundColor="yellow";
 // Box[0].style.margin="50px"
 
-
+f
 
 
 
@@ -694,4 +694,10 @@
 
 //math object in javascript
 //-built in object 
-console.log(Math.round(4.6));
+//console.log(Math.round(4.6));
+
+
+//oop
+//-programming paradigm that uses objects
+
+//class in JS

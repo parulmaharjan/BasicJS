@@ -1,0 +1,8 @@
+{
+    "profile":{
+        "name":"Ramey",
+        "age":23,
+        "gender":"male",
+        "ismarried":false
+    }
+}
